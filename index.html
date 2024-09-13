@@ -74,6 +74,11 @@
             line-height: 1.5;
         }
 
+        .description a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
         /* Footer con social */
         .footer {
             background-color: #111;
@@ -90,11 +95,16 @@
         .socials a {
             color: white;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 0;
         }
 
-        .socials a:hover {
-            color: #ccc;
+        .socials img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .socials a:hover img {
+            filter: brightness(0.8);
         }
     </style>
 </head>
@@ -107,25 +117,38 @@
 
     <!-- Sezione 2: 3 video YouTube -->
     <div class="container videos">
-        <iframe src="https://www.youtube.com/embed/videoID1" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/videoID2" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/videoID3" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/RQ8V9a7ly-w" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Lym2zMdjaNY" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/DfVyNTzHfWI" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <!-- Sezione 3: Paragrafo di descrizione -->
     <div class="container description">
         <p>
-            Randaprod.com è un'azienda innovativa nel campo della produzione video e del content marketing, 
-            specializzata nella creazione di contenuti unici e originali per diversi settori.
+            Davide Scomparin è un architetto con una carriera poliedrica che abbraccia non solo l'architettura, 
+            ma anche il design, la prototipazione e la creazione visiva. Laureato in architettura allo IUAV di Venezia nel 2014 
+            con una tesi dal titolo "Porto Marghera: manuale per usi futuri", ha esplorato ambiti trasversali grazie alla sua passione 
+            per l'innovazione e la tecnologia. Coniugando tecnica e creatività, applica un metodo basato su esperienza, strategia e 
+            miglioramento continuo. Parallelamente alla sua professione di architetto, continua a esplorare nuovi orizzonti attraverso 
+            il progetto artistico "Randa Prod.", che include la produzione di immagini, video, installazioni temporanee e oggetti di design, 
+            alimentati dalla sua visione innovativa. Nel 2023 ha aperto il proprio studio di architettura, 
+            "<a href="https://arkix.it" target="_blank">Studio l'architettura che non c'è</a>", 
+            un luogo in cui sperimenta nuove soluzioni progettuali e promuove un approccio innovativo e sostenibile all'architettura.
         </p>
     </div>
 
     <!-- Footer con social media -->
     <footer class="footer">
         <div class="socials">
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://youtube.com" target="_blank">YouTube</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/randa_prod" target="_blank">
+                <img src="instagram_logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@Randaprod" target="_blank">
+                <img src="youtube_logo.png" alt="YouTube">
+            </a>
+            <a href="https://www.facebook.com/randaprod/" target="_blank">
+                <img src="facebook_logo.png" alt="Facebook">
+            </a>
         </div>
     </footer>
 
