@@ -3,32 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mia pagina</title>
+    <title>Randaprod.com</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        h2 {
-            color: #333;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            width: 100%;
         }
 
-        p {
-            font-size: 16px;
-            line-height: 1.5;
+        /* Sezione 1: Fullscreen image con logo */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-image: url('path_to_your_image.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
             padding: 20px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Sezione 2: Video YouTube */
+        .videos {
+            padding: 50px 20px;
+        }
+
+        .videos iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            margin: 20px 0;
+        }
+
+        /* Sezione 3: Paragrafo di descrizione */
+        .description {
+            padding: 30px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* Footer con social */
+        .footer {
+            background-color: #111;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .socials a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .socials a:hover {
+            color: #ccc;
         }
     </style>
 </head>
 <body>
 
-    <section>
-        <h2>Benvenuto nel mio sito!</h2>
-        <p>Questo è un esempio di paragrafo. Qui puoi inserire il tuo testo, descrivere un concetto o raccontare una storia. Utilizza i tag HTML per formattare il testo, come <strong>per il testo in grassetto</strong>, <em>per il corsivo</em> e <a href="https://www.example.com">link per collegamenti esterni</a>.</p>
-    </section>
+    <!-- Sezione 1: Fullscreen image con logo -->
+    <div class="hero">
+        <h1>Randaprod.com</h1>
+    </div>
+
+    <!-- Sezione 2: 3 video YouTube -->
+    <div class="container videos">
+        <iframe src="https://www.youtube.com/embed/videoID1" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/videoID2" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/videoID3" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Sezione 3: Paragrafo di descrizione -->
+    <div class="container description">
+        <p>
+            Randaprod.com è un'azienda innovativa nel campo della produzione video e del content marketing, 
+            specializzata nella creazione di contenuti unici e originali per diversi settori.
+        </p>
+    </div>
+
+    <!-- Footer con social media -->
+    <footer class="footer">
+        <div class="socials">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+    </footer>
 
 </body>
 </html>
